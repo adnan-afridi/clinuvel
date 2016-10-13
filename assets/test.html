@@ -1,0 +1,1620 @@
+
+<!--<script type="text/javascript" src="resources/jquery-1.2.6.min.js"></script>-->
+
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Welcome to DecentServicesLLC.com</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-translate-customization" content="54eb61e01c53bb70-adc1494de4a861f3-g5398e844713e15af-c" />
+
+        <meta name="description" content="DescentServices.com" />
+        <meta name="keywords" content="DescentServices.com"/>
+        <script type="text/javascript" src="resources/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5547ae0b146a3374" async="async"></script>
+        <link href="../css/main.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="../css/responsive.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="../css/owl.theme.css" rel="stylesheet" />
+        <link href="../demo/admincp/js/rateit.css" rel="stylesheet" type="text/css" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Bootstrap theme -->
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet" />
+
+        <!-- Online store CSS files start -->
+        <link rel="stylesheet" href="../css/store_style.css" type="text/css" />
+
+        <link rel="stylesheet" type="text/css" href="../carouselengine/initcarousel-1.css">
+       
+
+            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+                <!-- Online store CSS files end -->
+                <style>
+                    #conf{
+                    		display:none;
+                    	}	
+                    .menu-container {
+                        float: left;
+                        display: block;
+                        width: 150px;
+                    }
+                    .submenu { display: none; }
+
+                    .footer_messagebox {
+                        position: absolute;
+                        right: 29%;
+                        top: 1670px;
+                        text-align: center;
+                        width: 232px;
+                        padding: 4px;
+                        background: #fff;
+                        color:#8FBC8F;
+                        box-shadow: 0 0 5px rgba(145, 145, 145, 0.2);
+                        -webkit-box-shadow: 0 0 5px rgba(145, 145, 145, 0.2);
+                        -moz-box-shadow: 0 0 5px rgba(145, 145, 145, 0.2);
+                    }
+                    .footer_messagebox p {
+                        display: block;
+                        background: #f1f2f2;
+                        overflow: hidden;
+                        padding: 20px 0px 0px 0px;
+                        font-size: 14px;
+                        color:#8FBC8F;
+                    }
+                    .close 	{
+                        width: 17px;
+                        height: 17px;
+                        background: url('images/close_old.png') no-repeat #fff;
+                        position: absolute;
+                        right: 13px;
+                        top: 13px;
+                        display: block;
+                        opacity: .5;
+                        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+                        filter: alpha(opacity=50);
+                        -moz-opacity: .5;
+                        -khtml-opacity: .5;
+                    }
+                    .header_top_inner ul li a {
+                        font-size: 14px;
+                        text-decoration: none;
+                        position: relative;
+                        padding: 0 10px;
+                        float: left;
+                        display: inline-block;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: normal;
+                        color: #000;
+                    }
+                    #logo {
+                        float: left;
+                        margin: -20px 0 15px;
+                        width: 308px;
+                    }
+                    #inner_header {
+                        margin: 0 auto;
+                        padding: 40px 0 5px;
+                        width: 996px;
+                    }
+                </style>
+
+                <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="../demo/admincp/js/jquery.rateit.min.js"></script>
+                <script src="../js/flaunt.js"></script>
+
+                <!-- Demo Analytics -->
+                <script>
+                    var _gaq = [['_setAccount', 'UA-20440416-10'], ['_trackPageview']];
+                    (function(d, t) {
+                        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                        g.src = '//www.google-analytics.com/ga.js';
+                        s.parentNode.insertBefore(g, s)
+                    })(document, 'script');
+                </script>
+
+                <script type="text/javascript" src="../js/modernizr.custom.04022.js"></script>
+
+        <script type="text/javascript">
+                
+                function addCommas(nStr)
+		{
+			nStr += '';
+			x = nStr.split('.');
+			x1 = x[0];
+			x2 = x.length > 1 ? '.' + x[1] : '';
+			var rgx = /(\d+)(\d{3})/;
+			while (rgx.test(x1)) {
+				x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			}
+			return x1 + x2;
+		}	
+                    $(document).ready(function()
+                    {
+                        $(".mobile_menu").click(function() {
+                            $(".nav").slideToggle(500);
+                        });
+                        
+                        
+                        $('.btnShowMore').click(function(e){
+				e.preventDefault();
+				//$(this).siblings('ul').children('li.extra').removeClass('hidden');
+				//document.getElementById('conf').style.display = block;
+				//$('#conf').attr('display','block');
+				$('#conf').show();
+				$(this).siblings('.btnShowLess').removeClass('hidden');
+				$(this).addClass('hidden');
+			});
+			
+			$('.btnShowLess').click(function(e){
+				e.preventDefault();
+				//$(this).siblings('ul').children('li.extra').addClass('hidden');
+				//document.getElementById('conf').style.display = none;
+				//$('#conf').attr('display','none');
+				$('#conf').hide();
+				$(this).siblings('.btnShowMore').removeClass('hidden');
+				$(this).addClass('hidden');
+			});
+		                        
+                    });
+
+                    function showCart(user)
+                    {
+                        if (document.getElementById("cartQty").value > 0)
+                        {
+                            //document.getElementById("cartUser").value = user;
+                            //frmcart.action="cart.php?store="+user;
+                            //frmcart.submit();
+                            window.location="cart.php?store=DescentServices.com";
+                        }
+                        else
+                            alert("Cart is empty");
+                    }
+                </script>
+
+                <script type="text/javascript">
+                    //Menu system
+                    $('.menu-container li').hover(function() {
+                        //show its submenu
+                        $('ul', this).fadeIn(100);
+
+                    }, function() {
+                        //hide its submenu
+                        $('ul', this).fadeOut(100);
+                    });
+
+                    function removeURLParameter(url, parameter)
+                    {
+                        //prefer to use l.search if you have a location/link object
+                        var urlparts = url.split('?');
+                        if (urlparts.length >= 2) {
+
+                            var prefix = encodeURIComponent(parameter) + '=';
+                            var pars = urlparts[1].split(/[&;]/g);
+
+                            //reverse iteration as may be destructive
+                            for (var i = pars.length; i-- > 0; ) {
+                                //idiom for string.startsWith
+                                if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                                    pars.splice(i, 1);
+                                }
+                            }
+
+                            url = urlparts[0] + '?' + pars.join('&');
+                            return url;
+                        } else {
+                            return url;
+                        }
+                    }
+
+                    function show_detail(id, mid)
+                    {
+
+                        var state = document.getElementById(id).style.display;
+
+                        if (state == 'block') {
+                            document.getElementById(id).style.display = 'none';
+                            /*document.getElementById(mid).src = "images/sitemap/rich_tree_collasp.png";*/
+                        }
+                        else {
+                            document.getElementById(id).style.display = 'block';
+                            /*document.getElementById(mid).src = "images/sitemap/rich_tree_expand.png";*/
+                        }
+                    }
+
+                    // Could be removed (i guess)
+                    function showCat(cat)
+                    {
+                        var check = document.getElementById(cat);
+                        if (check != null)
+                        {
+                            var state = document.getElementById(cat).style.display;
+
+                            if (state == 'block') {
+                                document.getElementById(cat).style.display = 'none';
+                                /*document.getElementById(mid).src = "images/sitemap/rich_tree_collasp.png";*/
+                            }
+                            else {
+                                document.getElementById(cat).style.display = 'block';
+                                /*document.getElementById(mid).src = "images/sitemap/rich_tree_expand.png";*/
+                            }
+                        }
+                    }
+
+                    function showProduct(cat)
+                    {
+                        var pageURL = 'products-db.php?store=DescentServices.com';
+                        //console.log(pageURL);
+                        var url = removeURLParameter(pageURL, 'page');
+                        frm.action = url;
+
+                        frm.option.value = "Show";
+                        frm.hcategory_id.value = cat;
+                        frm.hprd_id.value = '';
+                        frm.submit();
+                    }
+                    function productDetail(prd)
+                    {
+                        frm.option.value = "";
+                        frm.hprd_id.value = prd;
+                        frm.hcategory_id.value = '';
+                        //frm.action = "product-detail.php";
+                        frm.submit();
+                    }
+
+                    function isNumberKey(evt)
+                    {
+                        var charCode = (evt.which) ? evt.which : evt.keyCode;
+                        if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+                            return false;
+
+                        return true;
+                    }
+                    function selectOption(value, text)
+                    {
+			var decimal = 2; 	
+                        var tmp = value.split('-');
+                       // alert(tmp[0]);
+                        if (tmp[0] > 0)
+                        {
+                           // total = total.toFixed(decimal);  	
+                           var price = parseFloat(tmp[0]);
+                           
+                          // console.log(price);
+                          // console.log(price.toPrecision(2));
+                          // console.log( addCommas(price.toFixed(decimal)));
+                           
+                            document.getElementById("priceID").innerHTML =addCommas(price.toFixed(decimal));
+                            document.getElementById("prd_opt_id").value = tmp[1];
+                            //document.getElementById("spprice").style.display = block;
+                            $("#spprice").show();
+                        }
+                        else
+                        {
+                            document.getElementById("prd_opt_id").value = "";		
+                            //document.getElementById("spprice").style.display = none;
+                            $("#spprice").hide();
+                        }
+                        //alert(document.getElementById("prd_opt_id").value);
+                    }
+
+                    /*function showCart(user)
+                     {
+                     //alert(user);
+                     if(document.getElementById("cartQty").value > 0)
+                     {
+                     document.getElementById("cartUser").value = user;
+                     //frmcart.action="cart.php?store="+user;
+                     frmcart.submit();
+                     }
+                     }*/
+                </script>
+
+                <script type="text/javascript">
+                    // Footer Scripts
+
+                    function checkf()
+                    {
+                        name = $("#fullName").val();
+                        if (name != "") {
+                            $("#fullName").css('border', '1px solid #6F6F6F');
+                            /* $("#fullName").focus();
+                             $("#fullName']").css('background','white'); */
+                        }
+                    }
+                    function checke()
+                    {
+                        email = $("#emailAddress").val();
+                        if (email != "") {
+                            $("#emailAddress").css('border', '1px solid #6F6F6F');
+                            /* $("#fullName").focus();
+                             $("#fullName']").css('background','white'); */
+                        }
+                    }
+
+                    function subscribe()
+                    {
+                        name = $("#fullName").val();
+                        email = $("#emailAddress").val();
+			$("#fullName").css('background', 'white');
+			$("input[name='email']").css('background', 'white');
+			
+                        if (name == "") {
+                            $("#fullName").css('border', '1px solid red');
+                            $("#fullName").focus();
+                            $("#fullName").css('background', 'pink');
+                            return false;
+
+                        }
+                        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                        if (!emailPattern.test(email))
+                        {
+                            $("#emailAddress").css('border', '1px solid red');
+                            $("#emailAddress").focus();
+                            $("input[name='email']").css('background', 'pink');
+                            return false;
+                        } else {
+                            $("input[name='email']").css('background', 'white');
+                            $("input[name='email']").css('border', '1px solid #CCC');
+                        }
+
+                        $.ajax({
+                            type: "POST",
+                            data: 'email_subscription=' + email + '&name_subscription=' + name+ '&store=2446',
+                            url: 'subscription.php',
+                            success: function(response)
+                            {
+                                if (response == 1)
+                                {
+                                    alert('Thank you for subscribing to our Newsletter.');
+                                    $('.footer_messagebox p').html('Thank you for subscribing to our Newsletter');
+                                    $('.footer_messagebox').show();
+                                    $("#emailAddress").val('');
+                                    $("#fullName").val('');
+                                } else {
+                                    alert('This email address is already subscribed.'); 
+                                    $('.footer_messagebox p').html('This email address is already subscribed.');
+                                    $('.footer_messagebox').show();
+                                }
+                            }
+                        });
+                    }
+                    function pophide() {
+                        $('.footer_messagebox').hide();
+                    }
+                </script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//Categories
+	$('#store-categories li').hover(function() {
+		//show its submenu
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).show();
+		//cat.show();
+	}, function() {
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).hide();
+		//console.log(cat);
+
+		//$('ul', this).fadeOut(100);
+	});
+
+	/*$('.btnShowMore').on('click', function(e){
+		e.preventDefault();
+		//$(this).siblings('ul').children('li.extra').removeClass('hidden');
+		//document.getElementById('conf').style.display = block;
+		//$('#conf').attr('display','block');
+		$('#conf').show();
+		$(this).siblings('.btnShowLess').removeClass('hidden');
+		$(this).addClass('hidden');
+	});
+	
+	$('.btnShowLess').on('click', function(e){
+		e.preventDefault();
+		//$(this).siblings('ul').children('li.extra').addClass('hidden');
+		//document.getElementById('conf').style.display = none;
+		//$('#conf').attr('display','none');
+		$('#conf').hide();
+		$(this).siblings('.btnShowMore').removeClass('hidden');
+		$(this).addClass('hidden');
+	});*/
+});
+
+
+</script>
+                </head>
+<body>	
+  <div id="main-wrapper">
+         <div id="header_top_box_main"  style="background:none;">
+            <div id="header_top_box">
+                <div class="header_top_inner">
+                    <ul>
+<li><a href="slogin.php?store=DescentServices.com&ct=login">Login</a>|</li><li><a href="sign_up.php?store=DescentServices.com" >Sign Up</a></li>                                    </ul>
+                                    <!--<div class="top_header_left_section">
+                                        <p>
+                                            Free Consultation <span class="left_border" style="font-size:18px; color:#fff; padding:0 5px 0px 5px;">|</span>
+                                            USA Only <span style="font-size:15px; color:#ff8c00;">+1 (866)754 4460</span>
+                                            <span class="left_border" style="font-size:18px; color:#fff; padding:0 5px 0px 5px;">|</span>
+                                            Outside USA <span style="font-size:15px; color:#ff8c00;"> +1 (516)822 3100</span>
+                                        </p>
+                                        <div style="clear:both;"></div>
+                                    </div>-->
+                                    <div class="google_language" style="float:right; width:155px; vertical-align:bottom;">
+                                        <p style="color:#000;">
+                                            <!--Select Language:-->
+                                            <div id="google_translate_element"></div>
+                                        </p>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        function googleTranslateElementInit()
+                                        {
+                                            new google.translate.TranslateElement({
+                                                pageLanguage: 'en',
+                                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                                                autoDisplay: false
+                                            }, 'google_translate_element');
+                                        }
+                                    </script>
+                                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                                    <div class="clear-me"></div>
+                                </div><!-- /.header_top_inner -->
+                            </div><!-- /.header_top_box -->
+                        </div><!-- /.header_top_box_main -->
+
+                        <div id="header">
+                            <div id="inner_header">
+                                <div id="logo">
+<!--					<a href="https://www.getconnected360.com/index.php"><img src="../images/glogo.jpg" alt="" /></a>-->
+                                    <a href="products-db.php?store=DescentServices.com"><img src="../online_store/admin/images/store/2446.png" alt="" /></a>
+                                    <div class="clear-me"></div>
+                                </div><!-- /#logo -->
+
+                                <!--<div class="col-md-3"  style="float: right; padding-right:0; text-align: right;">-->
+<div style="float: right; padding-right:0; text-align: right;">
+    <div class="store_side_bar" >
+    <a href="http://getconnected360.com/store/inquiry_page.php?store=DescentServices.com&service=15003" class="dtn_btn_header" >    
+    <img src="https://www.getconnected360.com/images/51272.png" height="auto" >    </a>
+</div>
+</div>
+<div class="clear-me"></div>
+<div class="header_online_contact" style="width:166px; ">
+                                    <div class="ad_cart_section" style="display: none;">
+                                        <a href="javascript:showCart('2446')"><img src="../images/bascit_icon.jpg" /></a>
+                                        <a href="javascript:showCart('2446')"> Shopping cart</a>
+                                        <p><span class="cartitems">
+                                                0                                            </span></p>
+                                    </div><!-- /.ad_cart_section -->
+                                </div><!-- /.header_online_contact -->
+                                <div class="clear-me"></div>
+                            </div><!-- /#inner_header -->
+
+                            <div class="clear-me"></div>
+<div id="menu_navgation" class="top_nav2" style="display: none;">
+<div id="main_menu_box">
+<!-- Nav -->
+<nav class="nav">
+<ul class="nav-list">
+<li  class="nav-item home">
+    	    <a target="_self"
+               href="../store/products-db.php?store=DescentServices.com" >Home</a>
+     </li>
+<li  class="nav-item about_us">
+            <a href="../store/page.php?store=DescentServices.com&pid=78" >About Us</a>
+        </li>
+<li  class="nav-item products">
+                                    <a href="javascript:void(0)">Products</a>
+<ul class="nav-submenu">
+<li class="nav-submenu-item "><a href="products-db.php?store=DescentServices.com&cat=15008-2446&prd=" title="Residential Cleaning Services">Residential Cleaning Serv...</a></li><li class="nav-submenu-item "><a href="products-db.php?store=DescentServices.com&cat=15009-2446&prd=" title="Commercial Cleaning Services">Commercial Cleaning Servi...</a></li><li class="nav-submenu-item "><a href="products-db.php?store=DescentServices.com&cat=15013-2446&prd=15017-2446" title="Staffing">Staffing</a></li><li class="nav-submenu-item "><a href="products-db.php?store=DescentServices.com&cat=15011-2446&prd=" title="Elderly Care Services">Elderly Care Services</a></li><li class="nav-submenu-item "><a href="products-db.php?store=DescentServices.com&cat=15012-2446&prd=15015-2446" title="ABI Program">ABI Program</a></li>
+            </ul>
+        </li>
+<li  class="nav-item become_reseller">
+            <a href="../store/inquiry_page.php?store=DescentServices.com" >Become Reseller</a>
+        </li>
+<li  class="nav-item become_affiliate">
+            <a href="../store/inquiry_page.php?store=DescentServices.com" >Become Affiliate</a>
+        </li>
+<li  class="nav-item testimonials">
+            <a target="_blank" href="../Descent-Services" >Testimonials</a>
+</li>
+<li  class="nav-item inquiry">
+            <a href="../store/inquiry_page.php?store=DescentServices.com" >Inquiry</a>
+        </li>
+<li  class="nav-item member_review">
+                <a target="_blank" href="slogin.php?store=DescentServices.com" >Member Review</a>
+                </li>
+<li  class="nav-item guest_review">
+            <a target="_blank" href="guest-review-form.php?store=DescentServices.com" >Guest Review</a>
+            </li>
+</ul>
+</nav><!-- /.nav -->
+<div class="clear-me"></div>
+</div>
+</div>
+</div><!-- /#header -->
+</div><!-- /#main-wrapper -->
+
+                    <!--<div class="getaquote_btn2">
+                        <p class="getaquote_btn3"><a href="https://www.getconnected360.com/sign_up.php" class="getaquote_btn4">Free Sign Up</a></p>
+                    </div>--><script>
+
+     $(document).ready(function() { 	
+	$('img#refresh').click(function() {  
+			
+			change_captcha();
+	 });
+	 
+	 function change_captcha()
+	 {
+	 	document.getElementById('captcha').src="get_captcha.php?rnd=" + Math.random();
+	 }
+	
+    	$(document).keydown(function(event) {
+	        if (event.ctrlKey==true && (event.which == '118' || event.which == '86')) {
+	            /*alert('thou. shalt. not. PASTE!');*/
+	            event.preventDefault();
+	         }
+    
+	});
+      });
+	 
+</script>
+<style>
+.error {
+  /* display: block; */
+  color: #FF0000;
+  font-size: 12px;
+  line-height: 34px;
+}
+
+img#refresh{
+	float:left;
+	margin-top:30px;
+	margin-left:4px;
+	cursor:pointer;
+}
+#wrap {
+  border: solid #CCCCCC 1px;
+  width: 203px;
+  -webkit-border-radius: 10px;
+  float: left;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 3px;
+  margin-left: 0px;
+}
+.col-sm-2, .col-sm-7{
+	padding-left:0px;
+}
+.col-sm-7 input[type="checkbox"]
+{
+  width:5% !important;
+}
+.col-sm-7 input[type="radio"]
+{
+  width:5% !important;
+}
+.form-control{
+	margin-bottom:-10px;
+}
+</style>
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+<script type="text/javascript">
+
+	 
+
+        function selectService(service_id,service_name,ctr) {
+            
+            if (service_id != "-1") {
+                //optFrm.service_id.value = service_id;
+                optFrm.action = "inquiry_page.php?store=DescentServices.com&service="+service_id;
+                optFrm.submit();
+            }
+        }
+     
+     function validateEmail(email) {
+	    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+	    return re.test(email);
+	}
+
+     function validateForm()
+     {
+     	data   = [];
+     	label  = [];
+     	var err = 0;
+     	ind   = 1;
+     	//document.getElementById("errEmail").innerHTML = "";
+        document.getElementById("errCaptcha").innerHTML = "";
+     	if(document.getElementById("total_options") != null)
+     	{
+	     	for(i=1; i<=(Number(document.getElementById("total_options").value)); i++)
+	     	{
+	     		$("#err"+i).text("");
+	     	  
+	     	   if(document.getElementById("hoptionval"+i).value == "1")
+	     	   {
+	     	   
+		     	   if($("#htype"+i).val() == "radio")
+		     	   {
+		     	   	var flag = true;
+		     	   	for(j=1; j<=(Number(document.getElementById("hradio"+i).value)); j++)
+		     	   	{
+		     	        	//console.log("optionalElm"+i+"-"+j);
+		     	            if(document.getElementById("optionalElm"+i+"-"+j).checked==true)
+		     	            {
+		     	        	flag = false;
+		     	        		
+		     	        	if(typeof(document.getElementById("optionalElm"+i+"-"+j)) != 'undefined')
+		     	        	{
+		     	        		data[ind]  = document.getElementById("optionalElm"+i+"-"+j).value;
+	     	        			label[ind] = document.getElementById("hoptionlabel"+i).value;
+		     	        	}
+		     	        	ind++;
+		     	            }
+		     	        }
+		     	        if(flag)
+		     	        {
+		     	     		err++;
+		     	   		$("#err"+i).text("Required");
+		     	   	}
+		     	   	
+		     	   }
+		     	   else if($("#htype"+i).val() == "checkbox" )
+		     	   {
+		     	   	var flag = true;
+		     	   	for(j=1; j<=(Number(document.getElementById("hcheckbox"+i).value)); j++)
+		     	   	{
+		     	   	   
+		     	        	//console.log("optionalElm"+i+"-"+j);
+		     	            if(document.getElementById("optionalElm"+i+"-"+j).checked==true)
+		     	            {
+		     	         	flag = false;
+		     	        	if(typeof(document.getElementById("optionalElm"+i+"-"+j)) != 'undefined')
+		     	        	{
+		     	        		data[ind] = document.getElementById("optionalElm"+i+"-"+j).value;
+		     	        		label[ind] = document.getElementById("hoptionlabel"+i).value;
+		     	        	}
+		     	        	
+		     	        	 ind++;
+		     	            }
+		     	        }
+		     	        if(flag)
+		     	        {
+		     	     		err++;
+		     	   		$("#err"+i).text("Required");
+		     	   	}
+		     	   }
+		     	   else if($("#htype"+i).val() == "select")
+		     	   {
+		     	   	var e = document.getElementById("optionalElm"+i);
+				var sel = e.options[e.selectedIndex].value;
+				//console.log(i+"-"+j);
+				var flag = true;
+				for(j=1; j<=(Number(document.getElementById("hselect"+i).value)); j++)
+		     	   	{
+				  if(sel != "-1")
+				  {
+					data[ind] = sel;
+					label[ind] = document.getElementById("hoptionlabel"+i).value;
+	     	        		
+	     	        		ind++;
+	     	        		flag = false;
+				  }
+				}
+				if(flag)
+		     	        {
+		     	     		err++;
+		     	   		$("#err"+i).text("Required");
+		     	   	}
+				
+		     	   }
+		     	   else if(document.getElementById("optionalElm"+i).value =="")
+		     	   {
+		     	   	err++;
+		     	   	$("#err"+i).text("Required");
+			    	$("#err"+i).val("Required");
+			   }
+			   else
+			   {
+			   	if(typeof(document.getElementById("optionalElm"+i)) != 'undefined')
+			        {
+			        	data[ind] = document.getElementById("hoption_ID"+i).value+":::"+document.getElementById("optionalElm"+i).value;
+			        	label[ind] = document.getElementById("hoptionlabel"+i).value;
+			        	ind++;
+			        }
+			   }		   
+		    }
+		    else
+		    {
+		    	if(typeof(document.getElementById("optionalElm"+i)) != 'undefined' && document.getElementById("optionalElm"+i).value != null)
+		    	{
+		    	     //console.log(i);
+		    		data[ind] = document.getElementById("optionalElm"+i).value;
+		    		label[ind] = document.getElementById("hoptionlabel"+i).value;
+		    		ind++;
+		    	}
+		    }
+	     	}
+     	}
+     	for(k=1; k<data.length; k++)
+     	{
+     		if(typeof(data[k]) != 'undefined' && data[k] != "")
+     			console.log(k+"="+data[k]+"="+label[k]);
+     		
+     	}
+     	if(err > 0)
+     	{
+     	    alert("You have "+err+" Errors!");
+     	}
+     	else
+     	{
+     	   $.post("post.php?"+$("#optFrm").serialize(), {
+		
+			}, function(response){
+			
+			if(response==1)
+			{ 
+				optFrm.action.value = 'Send Email';
+     	   			optFrm.submit();
+			}
+			else
+			{
+				document.getElementById("errCaptcha").innerHTML = "Wrong Captcha!";
+	     			err++;
+			}
+			
+			
+		});
+     	  
+     	}
+     } 
+     function hide(obj) 
+     {
+    	var el = document.getElementById(obj);
+        el.style.display = 'none';
+     }              
+</script>                
+
+	
+	
+	<div id="main-wrapper">
+	<div id="top_content_box">
+		<div id="top_content_inner" style="max-width:1000px;">
+        
+		<div class="container">
+			<div class="store_content">
+				<div class="row">
+				<link rel="stylesheet" type="text/css" href="../css/product_style.css">
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//Categories
+	$('#store-categories li').hover(function() {
+		//show its submenu
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).show();
+		//cat.show();
+	}, function() {
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).hide();
+		//console.log(cat);
+
+		//$('ul', this).fadeOut(100);
+	});
+	
+	
+		//Categories
+	$('#cssmenu li').hover(function() {
+		//show its submenu
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).show();
+		//cat.show();
+	}, function() {
+		var cat = $(this).children('a');
+		var catid = $(this).children('a').attr('data-catid');
+		$(this).children('a').siblings('#'+catid).hide();
+		//console.log(cat);
+
+		//$('ul', this).fadeOut(100);
+	});
+	
+
+	$('.btnShowMore').on('click', function(e){
+		e.preventDefault();
+		$(this).siblings('ul').children('li.extra').removeClass('hidden');
+		$(this).siblings('.btnShowLess').removeClass('hidden');
+		$(this).addClass('hidden');
+	});
+	
+	$('.btnShowLess').on('click', function(e){
+		e.preventDefault();
+		$(this).siblings('ul').children('li.extra').addClass('hidden');
+		$(this).siblings('.btnShowMore').removeClass('hidden');
+		$(this).addClass('hidden');
+	});
+});
+</script>
+
+<div class="col-md-3" style="padding-left:0px; padding-right:20px;">
+<!-- Side Bar -->
+<div class="store_side_bar">
+<a href="products-db.php?store=DescentServices.com" class="btnGoBackToStore" style="display: none;"><span id="btsspan">Back to Store</span></a>
+    <a href="http://getconnected360.com/store/inquiry_page.php?store=DescentServices.com&service=15003" class="btnDonate1 dtn_btn dtn_btn_left"  >    
+    FREE QUOTATION    </a>
+
+                        <div class="store_categories">
+                            <div class="store_title" style="display: none;">
+                                <h4>All Categories</h4>
+                            </div>
+                         
+ 								<style>
+			
+				.sub_menu,#cssmenuone,#cssmenu ul li,#cssmenu,.store_side_bar ul div,.menu_nav{
+					background-color:#f2f2f2 !important;
+				} 
+				#cssmenu ul ul li:first-child:after{
+					    border-right: 10px solid #f2f2f2 !important;
+						
+				}
+				#cssmenu ul ul li{
+					padding: 0px 0px !important;
+				}
+				 #cssmenuone ul li a ,.menu_nav ul li a{
+					color: #141414 !important;
+					border-bottom-width: 0px !important;
+					background-color:#f2f2f2 !important;
+					
+				}
+.store_side_bar .store_categories,.store_side_bar .menu_nav{
+	border-bottom-color: # !important;
+}				
+				.store_side_bar .store_categories ul li a{
+					color: #141414 !important;
+				}
+				#cssmenu ul li,#cssmenuone ul li{
+				/* background: none;*/
+				
+					  background-position: 20px 18px;
+				}
+				
+				#cssmenu ul li a:hover,#cssmenuone ul li a:hover{
+			
+					color: # !important;
+				
+				}
+				#cssmenu ul li a:hover,#cssmenuone ul li a:hover{
+						background-color:#c5d3fc !important;
+				   
+					}
+				
+				#cssmenu ul li a:hover,#cssmenuone ul li a:hover,.menu_nav ul li a:hover{
+				background-color:#c5d3fc !important;
+				
+				    
+				}
+			
+				#cssmenuone ul ul li:hover #cssmenuone ul ul li a,#cssmenu ul ul li:hover #cssmenu ul ul li a{
+				
+				  background-color: #c5d3fc !important;
+				
+				}
+				#cssmenu ul ul li a{
+					background-color:#f2f2f2 !important;
+				}
+				#cssmenuone ul ul li{
+				  background-color: #c5d3fc !important;
+				  background: url() !important;
+				}
+				#cssmenuone ul ul li a:hover{
+				
+				  background-color: #b8b8b8 !important;  
+				
+				}
+				#cssmenuone ul ul li a{
+				
+				  background-color: #c5d3fc !important; 
+				  
+				}
+					
+				#cssmenu ul ul a,#cssmenuone ul ul a{
+					padding: 12px 2px;
+					padding:12px 14px !important;
+				}
+				
+				#cssmenu ul li,#cssmenuone ul li{
+					
+					border-bottom-width: 0px;
+					border-bottom-color: #b8b8b8 !important;
+					border-bottom-style: dashed;
+				}
+				
+				#cssmenuone ul li a,#cssmenu ul li a{
+				/*	background-position: 5px 5px !important;*/
+					padding-left: 26px !important;
+					border-bottom:1px solid #b8b8b8  !important;
+					
+				}
+				
+				#cssmenu ul li,#cssmenuone ul li a:last-child,#cssmenu ul li a:last-child,.store_side_bar .menu_nav li a:hover{
+					border-bottom-width: 0px;}
+					#cssmenu ul li:last-child{
+						border-bottom: 0px !important;
+					}
+				#cssmenuone > ul > li {
+				    /*border-right: 4px solid #c5d3fc !important;*/	
+					}
+				/*.store_side_bar .menu_nav {
+			    border-bottom: 6px solid # !important;}*/
+				#cssmenu > ul > li {
+				 /* border-left: 3px solid #c5d3fc !important;*/
+				}
+				#cssmenu ul li a,#cssmenu ul li ,#cssmenuone ul li a,#cssmenuone ul li {
+					color: #141414 !important;
+					
+					background: url() !important;
+					
+				}
+				.store_side_bar .menu_nav #cssmenu,.store_side_bar .menu_nav #cssmenuone{
+					
+				}
+				#default_cat_design ul li a,.store_side_bar .menu_nav li a{
+					border-bottom-width: 1px !important;	  
+					color: #141414 !important;
+					background-image: url(../images/66217.png) !important;
+					background-color: #f2f2f2 !important;
+					background-position: 20px 20px;
+					background-repeat: no-repeat !important;
+					border-bottom-color: #b8b8b8 !important;
+				}
+				#default_cat_design ul li a:hover,.store_side_bar ul li a:hover{
+					  color: # !important;
+					    background-color: #c5d3fc !important;  
+				}
+				.store_side_bar .store_categories{
+					border-bottom: 0px !important; 
+				}
+				.store_side_bar #store-categories{
+					border-bottom: 6px solid #;
+				}
+				.store_side_bar .store_categories ul ul{
+					border-bottom: 0px !important; 
+				}
+				#cssmenu ul ul li a,#cssmenuone ul{
+					border-bottom: 0px !important; 
+				}
+				#cssmenu ul,#cssmenuone ul{
+					margin-top: -20px;
+				}
+			</style>
+			
+  
+	<ul id="store-categories"> 
+</li><li class=""><a href="products-db.php?store=DescentServices.com&cat=15008-2446&prd="   data-catid="15008-2446" title="Residential Cleaning Services">Residential Cleaning Services</a><div style='display:none;' id='15008-2446'><ul id="store-categories"> 
+</ul></div></li><li class=""><a href="products-db.php?store=DescentServices.com&cat=15009-2446&prd="   data-catid="15009-2446" title="Commercial Cleaning Services">Commercial Cleaning Services</a><div style='display:none;' id='15009-2446'><ul id="store-categories"> 
+</ul></div></li><li class=""><a href="products-db.php?store=DescentServices.com&cat=15013-2446&prd=15017-2446"   data-catid="15013-2446" title="Staffing">Staffing</a><div style='display:none;' id='15013-2446'><ul id="store-categories"> 
+</ul></div></li><li class=""><a href="products-db.php?store=DescentServices.com&cat=15011-2446&prd="   data-catid="15011-2446" title="Elderly Care Services">Elderly Care Services</a><div style='display:none;' id='15011-2446'><ul id="store-categories"> 
+</ul></div></li><li class=""><a href="products-db.php?store=DescentServices.com&cat=15012-2446&prd=15015-2446"   data-catid="15012-2446" title="ABI Program">ABI Program</a><div style='display:none;' id='15012-2446'><ul id="store-categories"> 
+</ul></ul>
+
+</ul>
+							
+											
+                        </div>
+                        <div class="store_inquiry" style="display: none;">
+                            <a href="inquiry_page.php?store=DescentServices.com">
+				<!--<img src="../images/inquiry_ico.png" alt="Image" title="Image" />Contact Supplier -->			    </a>
+                        </div>
+
+                        <div class="menu_nav">
+                 
+								   <div id="default_cat_design">
+							 							
+							 <ul>
+				<li>
+					<a href="business-contact-us.php?store=DescentServices.com">Contact Us</a>
+				</li>
+				<li class=""><a href="page.php?store=DescentServices.com&pid=78">About Us</a></li><li class=""><a href="page.php?store=DescentServices.com&pid=79">Business Description</a></li><li class=""><a href="page.php?store=DescentServices.com&pid=80">Privacy Policy</a></li><li class=""><a href="page.php?store=DescentServices.com&pid=81">Disclaimer</a></li><li class=""><a href="page.php?store=DescentServices.com&pid=82">Terms of use</a></li>			</ul>
+					
+															
+
+	
+	</div>	
+		
+		                        </div>
+	
+                 <!-- Live chat start -->
+                 <div class="live_chat_contact_us" style="height:auto;">
+                                    </div>
+                <!-- Live chat end -->
+                <!-- Facebook like box -->   
+                
+                  			<div class="clear-me"></div>
+			<div class="live_chat_contact_us" style="height:auto;">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			
+			<div class="fb-page" data-href="https://www.facebook.com/pages/Decentservicesllccom/1432224880423553" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+			</div>  
+                     
+		<!-- END  Facebook like box -->				
+                    </div>
+                    <!-- End Side Bar -->
+                </div>							
+		<div class="col-md-9 form-wrapper">
+		
+		 <!-- <div class="success" id="successErr" style="display:none;">Success: Your Inquiry Submitted.<img src="images/close.png" alt="" class="close" id="close" onClick="hide('successErr')";"></div>-->
+		  
+			
+			<p style="margin-bottom:15px;"></p>
+						<!--<form role="form" class="form-horizontal" method="post" enctype="multipart/form-data" action="">-->
+            <h1 class="inq_hedding" style="text-transform:none; font-size:16px; padding-bottom:20px; line-height:24px;">
+				<span id='inq_ser_txt'>Send a General Inquiry or Select from the drop down menu.</span></h1>
+<DIV class='product-options' style='font-size:13px; padding-left:20px' ><form name='optFrm' id='optFrm' method='post' class='form-horizontal' enctype='multipart/form-data'><div required="" class="form-group"><label class="col-sm-2 control-label" for="Select Inquiry Type"> Select Inquiry Type: </label>&nbsp;<div class="col-sm-7"><Select class="select" name="service" id="service"  onChange="selectService(this.options[this.selectedIndex].value,this.options[this.selectedIndex].text)">
+  <option value="-1">---Select---</option><option value='15003'  selected >Cleaning Services</option><option value='15005' >Employment Application</option><option value='15002' >General Inquiry</option><option value='15004' >Home Care</option></select></div></div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval1' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype1' value='email'><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='Email Address'> <span class='required' >*</span>
+		   Email Address</label>   &nbsp;<span class='error' id='err1'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel1' value='Email Address'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID1' value='2446-0'>&nbsp;<div class="col-sm-7"><input class="form-control" type="email" name=option[] id="optionalElm1"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval2' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype2' value='text'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='Full Name'> <span class='required' >*</span>
+		   Full Name</label>   &nbsp;<span class='error' id='err2'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel2' value='Full Name'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID2' value='2446-1'>&nbsp;<div class="col-sm-7"><input class="form-control" type="text" name=option[] id="optionalElm2"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval3' value='0'><input class='form-control' type='hidden' name='htype[]' id='htype3' value='text'></div><div  class= form-group>
+	  	<label class='col-sm-2 control-label' for='Company's Name (Optional)'> 
+		   Company's Name (Optional)</label>   &nbsp;<span class='error' id='err3'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel3' value='Company's Name (Optional)'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID3' value='2446-2'>&nbsp;<div class="col-sm-7"><input class="form-control" type="text" name=option[] id="optionalElm3"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval4' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype4' value='text'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='Telephone Number (Required)'> <span class='required' >*</span>
+		   Telephone Number (Required)</label>   &nbsp;<span class='error' id='err4'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel4' value='Telephone Number (Required)'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID4' value='2446-3'>&nbsp;<div class="col-sm-7"><input class="form-control" type="text" name=option[] id="optionalElm4"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval5' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype5' value='text'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='Address (Required)'> <span class='required' >*</span>
+		   Address (Required)</label>   &nbsp;<span class='error' id='err5'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel5' value='Address (Required)'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID5' value='2446-4'>&nbsp;<div class="col-sm-7"><input class="form-control" type="text" name=option[] id="optionalElm5"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval6' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype6' value='select'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='How Often?'> <span class='required' >*</span>
+		   How Often?</label>   &nbsp;<span class='error' id='err6'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel6' value='How Often?'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID6' value='2446-23'><div class='col-sm-7'><select name=option[] id='optionalElm6'><option value='-1'>---Select---</option>&nbsp;<option value=2446-23-1>One Time</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script>&nbsp;<option value=2446-23-2>Daily</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script>&nbsp;<option value=2446-23-3>Weekly</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script>&nbsp;<option value=2446-23-4>Bi-Weekly</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script>&nbsp;<option value=2446-23-5>Monthly</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script>&nbsp;<option value=2446-23-6>Others</option><script> document.getElementById("inq_ser_txt").innerHTML = ""</script></select></div><input class='form-control' type='hidden' name='hselect[]' id='hselect6' value='6'><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval7' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype7' value='checkbox'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='What is Included in Cleaning?'> <span class='required' >*</span>
+		   What is Included in Cleaning?</label>   &nbsp;<span class='error' id='err7'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel7' value='What is Included in Cleaning?'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID7' value='2446-24'><div class="col-sm-7"><input type="hidden"  name=option[] id="optionalElm7"><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-1"  value="2446-24-1">&nbsp;Bedroom, Living Room & Common Areas<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-2"  value="2446-24-2">&nbsp;Dust all accessible surfaces<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-3"  value="2446-24-3">&nbsp;Wipe down all mirrors and glass fixtures<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-4"  value="2446-24-4">&nbsp;Clean all floor surfaces<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-5"  value="2446-24-6">&nbsp;Wash and sanitize toilet, shower, tub and sink<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-6"  value="2446-24-5">&nbsp;Take out garbage and recycling<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-7"  value="2446-24-8">&nbsp;Wipe down all mirrors and glass fixtures<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-8"  value="2446-24-11">&nbsp;Carpet Cleaning<script> document.getElementById("inq_ser_txt").innerHTML = ""</script><br>&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="option[2446-24][]" id="optionalElm7-9"  value="2446-24-12">&nbsp;Others<script> document.getElementById("inq_ser_txt").innerHTML = ""</script></div><input type='hidden' class='checkbox' name='hcheckbox[]' id='hcheckbox7' value='9'><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval8' value='1'><input class='form-control' type='hidden' name='htype[]' id='htype8' value='text'></div><div  class= form-group required>
+	  	<label class='col-sm-2 control-label' for='Estimated Area To Be Serviced'> <span class='required' >*</span>
+		   Estimated Area To Be Serviced</label>   &nbsp;<span class='error' id='err8'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel8' value='Estimated Area To Be Serviced'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID8' value='2446-26'>&nbsp;<div class="col-sm-7"><input class="form-control" type="text" name=option[] id="optionalElm8"  value="">&nbsp; </div><script> document.getElementById("inq_ser_txt").innerHTML = ""</script><input class='form-control' type='hidden' name='hoptionval[]' id='hoptionval9' value='0'><input class='form-control' type='hidden' name='htype[]' id='htype9' value='textarea'></div><div  class= form-group>
+	  	<label class='col-sm-2 control-label' for='Comments or Questions'> 
+		   Comments or Questions</label>   &nbsp;<span class='error' id='err9'></span><input class='form-control' type='hidden' style='width:100%' name='hoptionlabel[]' id='hoptionlabel9' value='Comments or Questions'><input class='form-control' type='hidden' style='width:100%' name='hoption_ID[]' id='hoption_ID9' value='2446-6'>&nbsp;<div class="col-sm-7" style="margin-bottom:30px"><textarea class="form-control" name=option[] id="optionalElm9"></textarea></div>     
+</div>
+		
+	<br clear="all" /><br clear="all" />
+
+<input type='hidden' class='form-control' name='total_options'	 id='total_options' value=9 ></div><div class='both_button contact_button'>
+				<input type='hidden' name='action'  />
+				<button type='reset'>Clear</button>
+				<button type='button' onclick='validateForm()'>Submit</button>
+			</div></form></DIV>								
+									
+
+									
+								<!--</form>-->
+								
+							</div><!-- /.form-wrapper -->
+
+					</div><!-- /.store_content -->
+				</div><!-- /.container -->
+     
+								<script src="../carouselengine/initcarousel-1.js"></script>
+				<script src="../carouselengine/amazingcarousel.js"></script>
+ 				
+			</div><!-- /#top_content_inner -->
+		</div><!-- /#top_content_box -->
+		
+		<div class="clear-me"></div>
+	</div><!-- /#main-wrapper -->
+
+	<script>
+		function validateform(frm)
+		{
+			var e = document.getElementById("cat");
+			var cat = e.options[e.selectedIndex].value;
+			var e = document.getElementById("ct");
+			var ct = e.options[e.selectedIndex].value;
+			var e = document.getElementById("state_dropdown");
+			var state = e.options[e.selectedIndex].value;
+			var zip = document.getElementById("txtzip").value;
+			var key = document.getElementById("txtkey").value;
+
+			if ((cat == "") && (ct == "") && (state == "") && (zip == "") && (key == ""))
+			{
+				alert("Please select one value from dropdown Or enter a value ");
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+
+	<!--<form name="frmcart" id="frmcart" method="POST" action="cart.php?store=">
+	  <input type="hidden" name="cartUser" id="cartUser" >
+	  <input type="hidden" name="cartQty" id="cartQty" value="" >  
+	</form>-->                         
+<div class="clear-me"></div>
+<div id="footer" style="padding: 20px 0; margin: 20px 0 0;display:none;">
+    <div id="inner_footer">
+        <div class="f_lis_boxes first_cols">
+            <h1>Quick Links</h1>
+            <ul>
+                <li class="home"><a target="_blank" href="?store=DescentServices.com">Home</a></li><li class="become_reseller"><a  href="../store/inquiry_page.php?store=DescentServices.com">Become Reseller</a></li><li class="become_affiliate" ><a  href="../store/inquiry_page.php?store=DescentServices.com">Become Affiliate</a></li><li class="testimonials"><a target="_blank" href="../Descent-Services">Testimonials</a></li><li class="inquiry"><a  href="../store/inquiry_page.php?store=DescentServices.com">Inquiry</a></li><li class="member_review"><a target="_blank" href="slogin.php?store=DescentServices.com">Member Review</a></li><li class="guest_review"><a target="_blank" href="guest-review-form.php?store=DescentServices.com">Guest Review</a></li>  
+                <!--					<li><a href="../index.php">Home</a></li>
+                                                        <li><a href="../about_us.php">About us</a></li>
+                                                        <li><a href="../services.php">Services</a></li>
+                                                        <li><a href="../login.php">Login</a></li>
+                                                        <li><a href="../sign_up.php">Free Signup</a></li>
+                                                        <li><a href="../contact_us.php">Contact us</a></li>-->
+            </ul>
+        </div>
+
+        <div class="f_lis_boxes second_cols">
+            <h1>Our Services</h1>
+<ul><li><a href="javascript:showProduct('15008-2446')" title="Residential Cleaning Services">Residential Cleaning Serv...</a></li><li><a href="javascript:showProduct('15009-2446')" title="Commercial Cleaning Services">Commercial Cleaning Servi...</a></li><li><a href="javascript:showProduct('15013-2446')" title="Staffing">Staffing</a></li><li><a href="javascript:showProduct('15011-2446')" title="Elderly Care Services">Elderly Care Services</a></li><li><a href="javascript:showProduct('15012-2446')" title="ABI Program">ABI Program</a></li></ul>        </div>
+
+        <div class="f_lis_boxes second_cols bor_none">
+            <h1>Information</h1>
+            <ul>
+                                    <li>
+                        <a href="business-contact-us.php?store=DescentServices.com">Contact Us</a>
+                    </li>
+                    <li><a href="page.php?store=DescentServices.com&pid=78">About Us</a></li><li><a href="page.php?store=DescentServices.com&pid=79">Business Description</a></li><li><a href="page.php?store=DescentServices.com&pid=80">Privacy Policy</a></li><li><a href="page.php?store=DescentServices.com&pid=81">Disclaimer</a></li><li><a href="page.php?store=DescentServices.com&pid=82">Terms of use</a></li>            </ul>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="f_lis_boxes news_later_cols">
+            <h1>Newsletter</h1>
+            <h2><a href="../sign_up.php">Sign up</a> to get exclusive offers!</h2>
+            <br />
+            <form method="post" id="newsletter">
+                                <div id="input_section">
+                    <input class="input"  type="text" name="fullName" id="fullName" placeholder="Full Name" required="required" onblur="checkf()"  />
+                    <input class="input" type="text" name="emailAddress" id="emailAddress" required="required"  placeholder="E-mail Address" onblur="checke()"/>
+                    <input type="button" id="newsletter_button" name="button" value="" onclick="subscribe()" style="float:right; cursor:pointer; border-radius:8px; text-transform:uppercase; border:none; width:67px; height:30px; margin:2px 20px 0 0; padding:10px 30px; background:url(../images/send_button.jpg) no-repeat;" />
+                </div>
+            </form>
+        </div>
+
+        <!--<div class="footer_messagebox" style="position:absolute;display:none;  z-index: 2147483647;"> <a href="javascript:pophide()" class="close"></a>-->
+        <div class="footer_messagebox" style="position:absolute;display:none;  z-index: 2147483647;"> <a href="javascript:pophide()" class="close"></a>
+            <p>Your email has been subscribed</p>
+        </div> 
+
+        <div style="text-align:center;" class="f_lis_boxes last_cols new_border">
+            <h1 style="text-align:left;">What customers say about us?</h1>
+            
+            						<div id="seal_bade">
+							<iframe src="https://www.getconnected360.com/rate_seal_250.php?ID=2446&WidgetType=1" width="250px" height="140px" scrolling="no" frameborder="0"></iframe>						</div>
+						        </div>
+        <div class="clear-me"></div>
+    </div>
+</div>
+
+<div id="new_social_box" style="margin-top:0;display:none;">
+    <div id="new_social_box_inner">
+        <div id="new_social_box_inner_left">
+            <p>Social Connections</p>
+            <!-- <a href="https://www.getconnected360.com/about_us.php" target="_blank">
+                 <img src="../images/y_logo.jpg" />
+             </a>
+             <a style="margin:20px 0 0 0;" href="https://www.bbb.org/new-york-city/business-reviews/business-forms-and-systems/infotaxsquare-com-inc-in-hicksville-ny-103960/#bbbonlineclick" target="_blank">
+                 <img src="../images/accred_logo.jpg" />
+             </a>-->
+
+            <div class="all_social_links" style="margin-left:0px;">
+                                        <a class="n_h_social_icon" href='https://www.facebook.com/pages/Decentservicesllccom/1432224880423553' target="_blank"><img src="../images/facebook.png" /></a>
+                                            <a class="n_h_social_icon" href='https://twitter.com/DescentServices' target="_blank"><img src="../images/twitter.png" /></a>
+                                            <a class="n_h_social_icon" href='https://www.linkedin.com/pub/descent-services/b6/803/3b2/en' target="_blank"><img src="../images/linkedin.png" /></a>
+                                            <a class="n_h_social_icon" href='https://www.pinterest.com/descentc/' target="_blank"><img src="../images/pinterest.png" /></a>
+                                            <a class="n_h_social_icon" href='https://plus.google.com/u/0/103800848453049946755' target="_blank"><img src="../images/googleplus.png" /></a>
+                                              <a class="n_h_social_icon" href='https://www.youtube.com/channel/UCJw639pNBUJI3ii7T98ynsg' target="_blank"><img src="../images/youtube.jpg" style="width:32px;height:32px;"/></a>
+                                              <a class="n_h_social_icon" href='http://descent-service.blogspot.com/' target="_blank"><img src="../images/blogger.jpg"  style="width:32px;height:32px;"/></a>
+                                            </div>
+            <div class="clear-me"></div>
+        </div>
+
+        <div id="new_social_box_inner_right">
+            <p style="font-weight: normal;font-family: Arial, Helvetica, sans-serif;font-size: 18px;"></p>
+            <div style="margin-top:5px; float:right;">
+            <div class="card_1"></div>
+            <div class="card_2"></div>
+            <div class="card_3"></div>
+            <div class="card_4"></div>
+            <div class="card_5"></div>
+            </div>
+            <div class="clear-me"></div>
+        </div>
+        <div class="clear-me"></div>
+    </div>
+</div>
+
+<div id="copy_right" style="margin:0; padding:0;display:none;">
+    <div id="copy_right_inner">
+        <p>Copyright &copy;  2014 <a href="#"><strong>GetConnected360.com.</strong></a> All Rights Reserved.</p>
+        <span>Powered by <a href="https://www.getconnected360.com/" target="_blank"><strong>GetConnected360.com</strong></a></span>
+        <div class="clear-me"></div>	
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+                
+                $('#menu_navgation').css('background','#010050');
+        $('.top_nav2').css('background','#010050');
+        $('.top_nav1').css('background','#010050');
+        $('.top_nav3').css('background','#010050');
+        $('.nav-submenu-item a').css('background','#010050');
+        
+        $('.nav-item a').css('color','#ffffff');
+      
+             $('.nav-item > .active').css('background','#2a27e3');
+     
+        $('.nav-item a').hover(function() {
+            	$(this).css('background', '#2a27e3');
+            	$(this).css('color', '#'); 
+        	},
+        	//reset it back when mouseout
+        	function() {
+        		$(this).css('background', '');
+        		$(this).css('color', '#ffffff'); 
+                $('.nav-item > .active').css('background','#2a27e3');
+        	});
+       
+        $('.nav-submenu-item a').hover(function() {
+            	$(this).css('background', '#2a27e3');
+        	},
+        	function() {
+                                $(this).css('background', '#010050');
+                        	});
+        	
+                         $('.top_nav2').css('display','block');
+        $('.top_nav1').css('display','none');
+        $('.top_nav3').css('display','none');
+                                //Navigation Menus
+        $('.home').css('display',"")
+        $('.nav .nav-list .about_us').css('display',"block")
+        $('.products').css('display',"block")
+        $('.become_reseller').css('display',"block")
+        $('.become_affiliate').css('display',"block")
+        $('.testimonials').css('display',"block")
+        $('.inquiry').css('display',"block")
+        $('.member_review').css('display',"block")
+        $('.guest_review').css('display',"block")
+        $('.my_account').css('display',"block");
+    })
+</script>
+<script type="text/javascript">
+	$('#footer').css('display','block');
+        $('#new_social_box').css('display','block');
+        $('#copy_right').css('display','block');
+    
+    $(document).ready(function(){
+        $('.card_1').html('<img src="../images/paypal_icon.jpg">');       	
+       	
+                      	
+       
+        $('#footer').css('background','#e8eeff');
+        $('#footer').css('border-top','4px solid #');
+        $('#new_social_box').css('border-top','1px solid #');
+        $('#new_social_box').css('border-bottom','1px solid #');
+        $('.f_lis_boxes ul li a').css('color','#');
+        $('.f_lis_boxes h1').css('color','#');
+        $('.f_lis_boxes h2').css('color','#');
+        $('.f_lis_boxes h2 a').css('color','#');
+        $('#new_social_box').css('background','#ccd9fc');
+        $('#new_social_box_inner_left p').css('color','#');
+        $('#new_social_box_inner_right p').css('color','#');
+        $('#copy_right').css('background','#0b35ae');
+        $('#copy_right_inner p').css('color','#ffffff');
+        $('#copy_right_inner span').css('color','#ffffff');
+        $('#copy_right_inner p a').css('color','#ffffff');
+        $('#copy_right_inner span a').css('color','#ffffff');
+        $('.google_language').find('.goog-te-gadget-icon').css('background-image','url(../images/)');
+                $('#newsletter_button').css('background','#0b35ae');
+        $('#newsletter_button').val('SEND');
+        $('#newsletter_button').css('padding','7px 17px');
+        $('#newsletter_button').css('color','#ffffff');
+                               /* $('#footer').css('display','block');
+        $('#new_social_box').css('display','block');
+        $('#copy_right').css('display','block');*/
+        $('.f_lis_boxes h1').css('border-bottom','1px solid #');
+        $('.f_lis_boxes').css('border-right','1px solid #');
+                        $('#new_social_box').css('display','');
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.store_title h1').css('color','#010050');
+        $('.store_title h1').css('font-family','Arial');
+        $('.store_title h1').css('font-size','24px');
+        
+        $('.store_title_text_product h1').css('color','#010050');
+        $('.store_title_text_product h1').css('font-family','Arial');
+        $('.store_title_text_product h1').css('font-size','24px');
+                        $('.store_main_content').css('display','block');
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    
+    	$('.rit-thumb-heading').css('background','#');
+    	$('.rit-thumb-heading h4').css('color','#141414');
+    	$('.detail-btn').css('background','#c5d3fc');
+    	$('.rit-thumb').css('border-bottom','5px solid #');
+    	$('.prize-btn').css('color','#010050');
+    	$('.prize-btn').css('font-size','');
+    	$('.fa-list').css('color','#010050');
+    	
+    	/**** Simple ***/
+    	$('.col-item').css('background','#');
+    	$('.price-text-color').css('color','#010050');
+    	$('.btn-details a').css('color','#141414');
+    	$('.btn-details').css('font-size','');
+    	/*$('.col-item').css('border-bottom','5px solid #');*/
+    	$('.post-title b').css('background-color','#c5d3fc');
+    	$('.post-title b').css('color','#141414');
+    	
+    	/**** Box With Shades ***/
+    	$('.rit-thumb-heading2 h2').css('color','#');
+    	$('.price3').css('color','#010050');
+    	$('.z_click_n').css('color','#010050');
+    	
+    	/**** front and back style with rotation ***/
+    	$('.protitles3').css('color','#');
+    	$('.protitles3').css('font-size','');
+    	$('.protitles3').css('background','#');
+    	$('.ch-info-back h3').css('color','#010050');
+    	/*$('.ch-info').css('border','5px solid #');*/
+    	$('.ch-info-back h3').css('color','#010050');
+    	$('.ch-info-back p a').css('color','#010050');
+    	$('.ch-info-back').css('background','#c5d3fc');
+    	
+    	$('.store_product_title_text h1').css('font-size','');
+        $('.store_product_title_text h1').css('color','#');
+    	
+        
+        $('#online-store-center a').css('color','#010050');
+
+        $('.store_product_box').css('background','#');        
+        $('.store_product_box').css('border-bottom','5px solid #');
+        $('.store_product_text h5').css('color','#141414');
+        $('.store_product_text h6').css('color','#010050');
+        $('.store_overlay').css('background','#c5d3fc');
+        $('.store_overlay').css('color','#141414');
+        $('.store_overlay h5').css('color','#141414');
+        $('.store_overlay h6').css('color','#141414');
+        $('.store_overlay p').css('color','#141414');
+        $('.store_overlay p').css('font-size','');
+        $('.store_overlay a').css('color','#010050');
+        $('.store_overlay ul li').css('font-size','');
+        $('#prds_title').css('color','#');
+        $('#prds_title').css('font-size','');
+        $('#prds_title h1').css('color','#');
+        $('#prds_title h1').css('font-size','');
+        $('#st_main_content').css('display','block');
+                $('.store_main_content .store_products .store_product_box').hover(function() {
+                	$(this).css('border-bottom-color', '#010050');
+                },
+                function() {
+                    $(this).css('border-bottom-color', '#');
+                });
+    })
+     </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.store_pagination_box').css('background','#dbdbdb');
+        $('.pagination-total-records').css('color','#1a1a1a');
+        $('.pagi a').css('background','#0b35ae');
+        $('.pagi a').css('color','#ffffff');
+        $('.pagi a.current').css('background','#041957'); //current
+        $('.pagi a.current').css('color','#ffffff'); //current
+        	    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+                $('.store_side_bar .store_categories .store_title').css('background','url(../images/56170.png)');
+$('.store_side_bar .store_categories .store_title').css('display','block');
+        
+        $('.store_side_bar .store_categories .store_title h4').css('color','#ffffff');
+        $('.store_side_bar .store_categories .store_title h4').css('background-position','10% 50%');
+        $('.store_side_bar .store_categories ul li').css('background','url(../images/66217.png) no-repeat');
+                $('.store_side_bar .store_categories ul li').css('background-position', '20px 20px');
+        $('.store_side_bar .store_categories ul li a').css('border-bottom','1px dashed #b8b8b8');
+        $('.store_side_bar .store_categories').css('border-bottom','6px solid #');
+        $('.store_side_bar .store_categories ul li:last-child > a').css('border-bottom','');
+        $('.store_side_bar .store_categories').css('background','#f2f2f2');
+        $('.store_side_bar .store_categories ul li a').css('color','#141414');
+        $('.store_side_bar .btnShowMore').css('background','#');
+        $('.store_side_bar .btnShowMore').css('color','#');
+        $('.store_side_bar .btnShowLess').css('background','#');
+        $('.store_side_bar .btnShowLess').css('color','#');
+        $('.store_side_bar .store_categories ul li a').hover(function() {
+        	$(this).css('background', 'url(../images/66217.png) left center no-repeat #c5d3fc');
+        	$(this).css('background-position', '20px 20px');
+                            $(this).css('color', '#');
+        },
+        function() {
+                        $(this).css('background', 'url(../images/66217.png) left center no-repeat #f2f2f2');
+            $(this).css('background-position', '20px 20px');
+                    	$(this).css('color', '#141414');
+        });
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.store_inquiry a').css('background','#0b35ae');
+        $('.store_inquiry a').css('color','#ffffff');
+        $('.store_inquiry a').css('font-size','14px');
+        $('.store_side_bar .store_inquiry a').css('border-bottom','3px solid #010050');
+ 
+        
+                $('.store_inquiry a').html('<img src="../images/6553.png" alt="Image" title="Image">Do you have a question?');
+               
+        $('.store_inquiry').css('display','block');
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+              $('#captcha-id').css('display','none');
+           })
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+                $('.store_side_bar .menu_nav ul li').css('background','url(../images/1911.png) no-repeat');
+        $('.store_side_bar .menu_nav ul li').css('background-position', '20px 20px');
+                $('.store_side_bar .menu_nav ul li a').css('color','#141414');
+        $('.store_side_bar .menu_nav ul li a').css('border-bottom','1px dashed #b8b8b8');
+        $('.store_side_bar .menu_nav').css('border-bottom','6px solid #');
+        $('.store_side_bar .menu_nav').css('background','#f2f2f2');
+        /*$('.store_side_bar .btnShowMore').css('background','#');
+        $('.store_side_bar .btnShowLess').css('background','#');
+        $('.store_side_bar .btnShowMore').css('color','#');
+        $('.store_side_bar .btnShowLess').css('color','#');*/
+        $('.store_side_bar .menu_nav ul li a').hover(function() {
+                                $(this).css('background', 'url(../images/1911.png) left center no-repeat #c5d3fc');
+                $(this).css('background-position', '20px 20px');
+                $(this).css('color', '#0b35ae');
+        },
+        function() {
+                        $(this).css('background', 'url(../images/1911.png) left center no-repeat #f2f2f2');
+            $(this).css('background-position', '20px 20px');
+            $(this).css('color', '#141414');
+        });
+         
+$('.store_inquiry').css('display','');
+$('.menu_nav').css('display','');
+$('.store_categories').css('display','');
+$('.live_chat_contact_us').css('display','');  
+
+$('.btnShowMore').siblings('ul').children('li.extra').removeClass('hidden');
+$('.btnShowMore').siblings('div').children('ul').children('li.extra').removeClass('hidden');
+$('.btnShowMore').siblings('.btnShowLess').removeClass('hidden');
+$('.btnShowMore').addClass('hidden');
+$('.btnShowLess').css('display','none'); 
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+	$('.store_side_bar .btnGoBackToStore').css('display','block');
+                
+        $('.store_side_bar .btnGoBackToStore').css('background','#4571f5');
+        $('.store_side_bar .btnGoBackToStore').css('color','#ffffff');
+        $('.store_side_bar .btnGoBackToStore').hover(function () {
+                $(this).css('background','#010050');
+                $(this).css('color','#ffffff');
+            },
+            function () {
+                $(this).css('background','#4571f5');
+                $(this).css('color','#ffffff');
+        });
+        
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //Contact Info
+        $('.store_main_content .store_business_location .store_contact_info .store_title').css('background','url(../images/5721.png) no-repeat');
+        $('.store_main_content .store_business_location .store_contact_info .store_title h4').css('background','url(../images/phone_ico.png) no-repeat');
+        $('.store_main_content .store_business_location .store_contact_info .store_title h4').css('background-position','19px 12px');
+        $('.store_main_content .store_business_location .store_contact_info .store_title h4').css('color','#ffffff');
+        //Business Hours
+        $('.store_main_content .store_business_location .store_business_hour .store_title').css('background','url(../images/17946.png) no-repeat');
+        $('.store_main_content .store_business_location .store_business_hour .store_title h4').css('background','url(../images/business_ico.png) no-repeat');
+        $('.store_main_content .store_business_location .store_business_hour .store_title h4').css('background-position','19px 12px');
+        $('.store_main_content .store_business_location .store_business_hour .store_title h4').css('color','#ffffff');
+        //Location Map
+        $('.store_main_content .store_business_location .store_map .store_title').css('background','url(../images/4755.png) no-repeat');
+        $('.store_main_content .store_business_location .store_map .store_title h4').css('background','url(../images/map_ico.png) no-repeat');
+        $('.store_main_content .store_business_location .store_map .store_title h4').css('background-position','19px 12px');
+        $('.store_main_content .store_business_location .store_map .store_title h4').css('color','#ffffff');
+
+        //Business Hours Blue Watch Icon
+        $('.store_main_content .store_business_location .store_business_hour ul li').css('background','url(../images/25573.png) center right no-repeat');
+
+        //Address Icon
+        $('.store_contact_info ul li img:eq(0)').attr('src','../images/92314.png');
+
+        //Email Icon
+        $('.store_contact_info ul li img:eq(1)').attr('src','../images/45152.png');
+
+        //phone Icon
+        $('.store_contact_info ul li img:eq(2)').attr('src','../images/62779.png');
+
+        //fax Icon
+        $('.store_contact_info ul li img:eq(3)').attr('src','../images/68754.png');
+
+        //URL Icon
+        $('.store_contact_info ul li img:eq(4)').attr('src','../images/80360.png');
+
+        $('.store_main_content .store_business_location .store_contact_info ul li .store_text2 h6:eq(0)').css('color','#010050');
+        $('.store_main_content .store_business_location .store_contact_info ul li .store_text2 h6:eq(1)').css('color','#010050');
+        $('.store_main_content .store_business_location .store_contact_info ul li .store_text2 h6:eq(2)').css('color','#010050');
+        $('.store_main_content .store_business_location .store_contact_info ul li .store_text2 h6:eq(3)').css('color','#010050');
+        $('.store_main_content .store_business_location .store_contact_info ul li .store_text2 h6:eq(4)').css('color','#010050');
+                                            });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+               $('#header').css('background','#ffffff');
+	        
+         
+                $('.header_top_inner ul li a').css('font-size','#14px');
+        $('.header_top_inner p').css('font-size','#14px');
+        $('.header_top_inner ul li a').css('color','#010050');
+        $('.header_top_inner p').css('color','#010050');
+                $('.dtn_btn').css('color','#ffffff');
+        $('.dtn_btn').css('font-size','');
+        $('.dtn_btn').css('background','#010050');
+$('.dtn_btn').hover(function () {
+                        $(this).css('background', '#010050');
+                        $(this).css('color', '#ffffff');
+                    },
+                    function () {
+                        $(this).css('background', '#010050');
+                        $(this).css('color', '#ffffff');
+});
+        $('.header_top_inner ul li a').hover(function() {
+                	$(this).css('color', '#3f6cf2');
+                },
+                function() {
+                	$(this).css('color', '#010050');
+                });
+        $('.ad_cart_section a').css('font-size','16px');
+        $('.ad_cart_section a img').attr('src','../images/bascit_icon.jpg');
+                $('.ad_cart_section a').css('color','#010050');
+        $('.ad_cart_section a').hover(function () {
+                $(this).css('color', '#4b65de');
+            },
+            function () {
+                $(this).css('color', '#010050');
+            });
+        $('.cartitems').css('color','#ffffff');
+        $('.ad_cart_section p').css('background','url(../images/93562.png) no-repeat top left');
+        $('.ad_cart_section').css('display','block');
+        $('#top_content_box').css('background','#ffffff');
+	             
+        
+                $('.header_online_contact').css('display','');
+        $('.google_language').css('display','');
+
+        <!--$('.dtn_btn_left').css('display','block');-->
+
+
+        $('#donatID').html('FREE QUOTATION');
+        $('#donatURL').val('http://getconnected360.com/store/inquiry_page.php?store=DescentServices.com&service=15003');
+
+    });
+</script>
+<form name="frmcart" id="frmcart" method="POST" action="cart.php?store=DescentServices.com">
+    <input type="hidden" name="cartUser" id="cartUser" >
+        <input type="hidden" name="cartQty" id="cartQty" value="0">  
+</form></body>
+</html>

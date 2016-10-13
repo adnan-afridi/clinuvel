@@ -1,0 +1,25 @@
+Dataset Name:		_SCENESSE_-_year_1_implant_1_administration_data_													
+"Dataset Description: All administration data for all patients administered SCENESSE implant 1 in year 1, complete and incomplete."															
+Item Status: 															
+Study Name: 	European EPP Disease Registry														
+Protocol ID: 	AFAM														
+Date: 	2016-Jul-26														
+Subjects: 	1														
+Study Event Definitions	1														
+															
+															
+															
+															
+															
+Study Event Definition 6	Y1V1	E6													
+CRF32	16. Eligibility and SCENESSE® administration - 1.1	C32													
+															
+															
+															
+															
+															
+															
+															
+															
+Study Subject ID	Protocol ID	Person ID	Sex	StartDate_E6	Age_E6	 Version Name_E6_C32	 Psympts_E6_C32 	 Ppregn_E6_C32 	 Padmind_E6_C32 	 Padmtm_E6_C32 	 Pbatch_E6_C32 	 Padmsid_E6_C32 	 Padmprb_E6_C32 	 Psupra_E6_C32 	 Psuprax_E6_C32 
+3101001	AFAM - 3101	3101001	m	22-06-16	68	1.1	0	-2	22-06-16	1305	ML1154	1	1	1	right umbilical region
